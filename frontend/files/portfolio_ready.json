@@ -1,0 +1,13 @@
+[
+  {
+    "name": "example-project",
+    "url": "https://github.com/yourname/example-project",
+    "stars": 42,
+    "updated_at": "2024-11-01T10:00:00Z",
+    "elevator_pitch": "Replace this file with your real portfolio_ready.json from the scripts/ folder",
+    "problem_and_solution": "Run harvester.py then refiner.py to generate your real data, then copy portfolio_ready.json into this public/ folder.",
+    "tech_stack": ["Python", "GitHub API", "Gemini"],
+    "display_name": "Example Project",
+    "highlight": "Other"
+  }
+]

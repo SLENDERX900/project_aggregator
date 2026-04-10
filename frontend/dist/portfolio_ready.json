@@ -1,0 +1,66 @@
+[
+  {
+    "tech_stack": [
+      "Python",
+      "Streamlit",
+      "OpenAI",
+      "PostgreSQL"
+    ],
+    "problem_and_solution": "The real-world problem of slow learning experiences in AI development is solved by SLENTRAC, which provides a beginner-friendly AI chatbot platform with interactive tutorials and project ideas.",
+    "display_name": "My Cool API",
+    "elevator_pitch": "SLENTRAC is a Python mentor platform that teaches AI chatbot development while you build your own apps.",
+    "highlight": "Web App",
+    "name": "SLENTRAC",
+    "url": "https://github.com/SLENDERX900/SLENTRAC",
+    "stars": 0,
+    "updated_at": "2026-03-28T16:40:21Z"
+  },
+  {
+    "tech_stack": [
+      "C++",
+      "Dart",
+      "Swift"
+    ],
+    "problem_and_solution": "The Helix BNP project aims to provide a starting point for a Flutter application, addressing the needs of developers who want to build a wealth fund app.",
+    "display_name": "Helix BNP",
+    "elevator_pitch": "Helix BNP is a wealth fund app built with Flutter.",
+    "highlight": "Web App",
+    "name": "helix_bnp",
+    "url": "https://github.com/SLENDERX900/helix_bnp",
+    "stars": 0,
+    "updated_at": "2026-02-26T07:26:01Z"
+  },
+  {
+    "tech_stack": [
+      "Python",
+      "Docker"
+    ],
+    "problem_and_solution": "The real-world problem of inefficient kernel solutions is addressed by Project Kernel, which solves it through its streamlined architecture.",
+    "display_name": "Project Kernel",
+    "elevator_pitch": "Project Kernel is a Python-based project that leverages its simplicity to deliver efficient kernel functionality.",
+    "highlight": "API",
+    "name": "project_kernel",
+    "url": "https://github.com/SLENDERX900/project_kernel",
+    "stars": 0,
+    "updated_at": "2026-04-01T00:46:11Z"
+  },
+  {
+    "tech_stack": [
+      "TypeScript",
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Vite",
+      "React",
+      "Tailwind CSS"
+    ],
+    "problem_and_solution": "The real-world problem Wealth-Compass solves is the lack of personalized financial planning. This project provides a solution by offering a user-friendly interface for users to track their expenses and create a customized investment plan.",
+    "display_name": "Wealth-Compass",
+    "elevator_pitch": "Wealth-Compass is an AI-driven wealth management platform built with Vite, TypeScript, React, and Tailwind CSS.",
+    "highlight": "Web App",
+    "name": "wealth-compass",
+    "url": "https://github.com/SLENDERX900/wealth-compass",
+    "stars": 0,
+    "updated_at": "2026-02-27T06:41:34Z"
+  }
+]
