@@ -64,7 +64,7 @@ export default function ProjectCard({ project, activeTag, onTagClick, onExpand }
         <span className="card-updated">
           {formattedDate ? `Updated ${formattedDate}` : ''}
         </span>
-        <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+        <div className="card-actions">
           <button className="peek-btn" onClick={onExpand} title="Sneak peek">
             Peek ↗
           </button>

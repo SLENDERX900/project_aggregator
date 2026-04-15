@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 export default function Modal({ project, onClose, onTagClick }) {
   const {
+    name,
     display_name,
     elevator_pitch,
     problem_and_solution,
@@ -16,9 +17,18 @@ export default function Modal({ project, onClose, onTagClick }) {
   const [previewLoaded, setPreviewLoaded] = useState(false)
   const [previewError, setPreviewError]   = useState(false)
 
-  // Decide if we can show a live iframe preview.
-  // Many sites block iframes via X-Frame-Options — we show a fallback in that case.
-  const canPreview = Boolean(homepage) && !previewError
+  // Build iframe URL - add ?embed=true for Streamlit apps to prevent redirect loops
+  const getIframeUrl = (url) => {
+    if (!url) return url
+    if (url.includes('streamlit.app')) {
+      // Add ?embed=true parameter for Streamlit embedding
+      const separator = url.includes('?') ? '&' : '?'
+      return `${url}${separator}embed=true`
+    }
+    return url
+  }
+  
+  const iframeUrl = getIframeUrl(homepage)
 
   const formattedDate = updated_at
     ? new Date(updated_at).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
@@ -108,24 +118,29 @@ export default function Modal({ project, onClose, onTagClick }) {
                   {!previewLoaded && (
                     <div className="preview-loading">
                       <div className="loader" />
-                      <p>Loading preview…</p>
+                      <p>Loading sneak peek…</p>
                     </div>
                   )}
                   <iframe
-                    src={homepage}
+                    src={iframeUrl}
                     title={`Live preview of ${display_name}`}
                     className="preview-iframe"
                     style={{ opacity: previewLoaded ? 1 : 0 }}
                     onLoad={() => setPreviewLoaded(true)}
                     onError={() => setPreviewError(true)}
-                    sandbox="allow-scripts allow-same-origin allow-forms"
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
                   />
                 </>
               ) : (
-                <div className="preview-blocked">
-                  <p>Preview blocked by site policy</p>
+                <div className="sneak-peek-placeholder">
+                  <div className="sneak-peek-icon">👁️</div>
+                  <p className="sneak-peek-title">Sneak Peek Unavailable</p>
+                  <p className="sneak-peek-desc">
+                    This site blocks iframe embedding for security.
+                    <br />Click below to visit the live app.
+                  </p>
                   <a href={homepage} target="_blank" rel="noreferrer" className="modal-btn modal-btn-primary">
-                    Open in new tab →
+                    Open Live Site →
                   </a>
                 </div>
               )}

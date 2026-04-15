@@ -1,66 +1,95 @@
 [
   {
-    "problem_and_solution": "This project solves the problem of beginner-friendly AI chatbot development by providing a local-first platform with a 7-day build plan.",
-    "display_name": "My Cool SLENTRAC API",
+    "elevator_pitch": "PYLearn is an AI chatbot platform that teaches Python while you build your own apps.",
+    "highlight": "Web App",
     "tech_stack": [
       "Python",
       "Streamlit",
       "OpenAI",
-      "PostgreSQL"
+      "Ollama"
     ],
-    "highlight": "API",
-    "elevator_pitch": "SLENTRAC is a Python mentor platform that teaches AI chatbot development while building apps.",
-    "name": "SLENTRAC",
-    "url": "https://github.com/SLENDERX900/SLENTRAC",
+    "problem_and_solution": "The real-world problem is learning a new programming language without guidance. PYLearn solves it by providing an interactive UI showcase, privacy-first AI, and zero-cloud dependency.",
+    "display_name": "PYLearn",
+    "name": "PYLearn",
+    "url": "https://github.com/SLENDERX900/PYLearn",
+    "homepage": "https://pythontutorandbuilder.streamlit.app/",
     "stars": 0,
-    "updated_at": "2026-03-28T16:40:21Z"
+    "updated_at": "2026-04-15T13:48:53Z"
   },
   {
-    "problem_and_solution": "The Helix BNP project aims to provide a solution for wealth management, but its current implementation lacks clarity.",
-    "display_name": "Helix BNP",
-    "tech_stack": [
-      "Dart",
-      "Flutter",
-      "C++",
-      "Swift"
-    ],
+    "elevator_pitch": "Automate Pinterest pin creation with batch production of compelling titles, descriptions, and visual content for food blogs.",
     "highlight": "Web App",
-    "elevator_pitch": "Helix BNP is a wealth fund app built with Flutter.",
-    "name": "helix_bnp",
-    "url": "https://github.com/SLENDERX900/helix_bnp",
-    "stars": 0,
-    "updated_at": "2026-02-26T07:26:01Z"
-  },
-  {
-    "problem_and_solution": "This project solves the problem of inefficient data processing by providing a robust kernel. It offers concrete value through its ability to handle large datasets with ease.",
-    "display_name": "Project Kernel",
     "tech_stack": [
       "Python",
-      "Docker"
+      "Streamlit",
+      "Pillow",
+      "Pandas",
+      "Requests",
+      "BeautifulSoup4",
+      "python-dotenv",
+      "Ollama"
     ],
-    "highlight": "API",
-    "elevator_pitch": "A Python-based project kernel for efficient data processing.",
-    "name": "project_kernel",
-    "url": "https://github.com/SLENDERX900/project_kernel",
+    "problem_and_solution": "Food bloggers struggle to create visually appealing pins without manual effort. This project solves it by automating the process using Streamlit's interactive dashboard and Ollama's AI copy engine.",
+    "display_name": "Pinterest Factory",
+    "name": "Pinterest-Factory",
+    "url": "https://github.com/SLENDERX900/Pinterest-Factory",
+    "homepage": "https://pinterest-factory-example.streamlit.app/",
     "stars": 0,
-    "updated_at": "2026-04-01T00:46:11Z"
+    "updated_at": "2026-04-15T03:15:01Z"
   },
   {
-    "problem_and_solution": "The Wealth Compass project solves the problem of making complex financial decisions accessible to everyone. It provides a simple and intuitive way for users to explore their financial options.",
-    "display_name": "Wealth Compass",
+    "elevator_pitch": "NarratiQ is an AI-powered market analysis platform that generates contextual narratives from price action, news sentiment, and social buzz.",
+    "highlight": "Web App",
+    "tech_stack": [
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "Dockerfile",
+      "Procfile",
+      "Express",
+      "PostgreSQL",
+      "Supabase"
+    ],
+    "problem_and_solution": "The project solves the problem of understanding why financial events occur by providing a unified memory for specialized AI agents to generate insights. It achieves this through multi-source synthesis, persistent memory, and continuous operation.",
+    "display_name": "NarratiQ",
+    "name": "narratiq",
+    "url": "https://github.com/SLENDERX900/narratiq",
+    "homepage": "https://narratiq-one.vercel.app/",
+    "stars": 0,
+    "updated_at": "2026-04-15T13:51:17Z"
+  },
+  {
+    "elevator_pitch": "Project Kernel is an open-source ECE market intelligence system that uses Python and Streamlit to analyze preschool competitors in Malaysia.",
+    "highlight": "Web App",
+    "tech_stack": [
+      "Python",
+      "Streamlit"
+    ],
+    "problem_and_solution": "The project solves the problem of discovering and analyzing preschool competitors within a 10km radius of Bukit Jelutong by providing a comprehensive Early Childhood Education (ECE) market intelligence system. It enriches and analyzes data from various sources, including Overpass API, Kiddy123 Directory, Foursquare Places API, DuckDuckGo Search, and Nominatim reverse geocoding.",
+    "display_name": "Project Kernel",
+    "name": "project_kernel",
+    "url": "https://github.com/SLENDERX900/project_kernel",
+    "homepage": "https://projectkernel-example.streamlit.app/",
+    "stars": 0,
+    "updated_at": "2026-04-15T11:11:06Z"
+  },
+  {
+    "elevator_pitch": "Aurora is a next-generation sustainable wealth management app that simplifies investing by combining traditional portfolio management with ESG analytics.",
+    "highlight": "Web App",
     "tech_stack": [
       "TypeScript",
-      "Vite",
-      "React",
-      "Tailwind CSS",
-      "shadcn-ui",
-      "JavaScript"
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Docker",
+      "PostgreSQL"
     ],
-    "highlight": "Web App",
-    "elevator_pitch": "Wealth Compass is a project that helps users navigate financial decisions with a user-friendly interface.",
+    "problem_and_solution": "The real-world problem is greenwashing and fragmented portfolios, while Aurora solves it by providing a unified dashboard and ESG transparency engine.",
+    "display_name": "Aurora Wealth Compass",
     "name": "wealth-compass",
     "url": "https://github.com/SLENDERX900/wealth-compass",
+    "homepage": "https://v0-wealth-compass-delta.vercel.app",
     "stars": 0,
-    "updated_at": "2026-02-27T06:41:34Z"
+    "updated_at": "2026-04-15T04:01:21Z"
   }
 ]
