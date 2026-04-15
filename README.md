@@ -1,4 +1,4 @@
-"# Project Aggregator
+Project Aggregator
 
 A portfolio showcase website that aggregates and displays GitHub projects with AI-powered descriptions.
 
