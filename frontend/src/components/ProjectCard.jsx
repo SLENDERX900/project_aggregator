@@ -21,8 +21,16 @@ export default function ProjectCard({ project, activeTag, onTagClick, onExpand }
 
   const formattedDate = formatDate(updated_at)
 
+  const handleCardClick = (e) => {
+    // Don't trigger if clicking on interactive elements
+    if (e.target.closest('button') || e.target.closest('a')) {
+      return
+    }
+    onExpand()
+  }
+
   return (
-    <article className="project-card">
+    <article className="project-card" onClick={handleCardClick}>
       {/* Top row: highlight badge + stars */}
       <div className="card-top">
         {highlight && <span className="card-highlight">{highlight}</span>}
@@ -50,7 +58,10 @@ export default function ProjectCard({ project, activeTag, onTagClick, onExpand }
             <button
               key={tech}
               className={`tech-tag ${activeTag === tech ? 'highlighted' : ''}`}
-              onClick={() => onTagClick(tech)}
+              onClick={(e) => {
+                e.stopPropagation()
+                onTagClick(tech)
+              }}
               title={`Filter by ${tech}`}
             >
               {tech}
@@ -65,7 +76,7 @@ export default function ProjectCard({ project, activeTag, onTagClick, onExpand }
           {formattedDate ? `Updated ${formattedDate}` : ''}
         </span>
         <div className="card-actions">
-          <button className="peek-btn" onClick={onExpand} title="Sneak peek">
+          <button className="peek-btn" onClick={(e) => { e.stopPropagation(); onExpand() }} title="Sneak peek">
             Peek ↗
           </button>
           {url && (
